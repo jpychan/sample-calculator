@@ -5,15 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="description" content="Use this solar calculator to determine the cost of a traditional solar system in your area compared to our system">
 
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    <script src="scripts/solar-calculator.js"></script>
     <script src="scripts/accounting.min.js"></script>
     <script src="scripts/raphael.js"></script>
     <script src="scripts/jquery.usmap.js"></script>
+    <script src="scripts/solar-calculator.js"></script>
 
     <title>SOLAR CALCULATOR</title>   
 </head>
@@ -23,24 +22,28 @@
         <div>
             <div id="map"></div>
             <div id="solar-input-wrapper">
-                <p>1. Where do you live?</p>
-                <p id="selected-state-text">Select Your State.</p>
-                <select id="state-select">
-                    <!-- Populated via JavaScript -->
-                </select>
-                <p>2. What is your average monthly bill?</p>
-                <input class="investment-input" type="number" value="110.00">
-                <button id="calculate-btn" class="btn investment-btn">
-                    Calculate
-                </button>
+                <div class="question">
+                    <p>1. Where do you live?</p>
+                    <p id="selected-state-text"></p>
+                    <select id="state-select">
+                        <!-- Populated via JavaScript -->
+                    </select>
+                </div>
+                <div class="question">
+                    <p>2. What is your average monthly bill?</p>
+                    <input class="investment-input" type="number" value="100">
+                    <button id="calculate-btn" class="btn investment-btn">
+                        Calculate
+                    </button>
+                </div>
             </div>
         </div>
 
         <div id="solar-output-wrapper">
-            <p class="center">To cover your electric bill with rooftop solar, you'll need to spend around
+            <p>To cover your electric bill with rooftop solar, you'll need to spend around
                 <span class="number" id="solar-cost">$44,000</span>.</p>
                 <p>
-                But with the solar co-op, you would cover the same electric bill for only <span id="peak-sun-cost" class="number">$17,600</span>.</p><p>That's a savings of <span id="savings" class="number">$26,400</span> or <span id="savings-percentage" class="number">60%</span>.</p>
+                But with the solar co-op, you would cover the same electric bill for only <span id="solar-coop-cost" class="number">$17,600</span>.</p><p>That's a savings of <span id="savings" class="number">$26,400</span> or <span id="savings-percentage" class="number">60%</span>.</p>
             </p>
         </div>
     </div>

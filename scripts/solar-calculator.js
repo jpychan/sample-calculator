@@ -104,7 +104,8 @@ var solarHoursByState = {
     WY: 4.7
 }
 
-function calculatekwPerHour(bill, state) {
+// calculate how many panels one would need to generate the same power
+function calculateRequiredSolarPanels(bill, state) {
     var actualHours = solarHoursByState[state] - 1.35;
     var kwPerMonth = bill / 0.12;
     var kwPerYear = kwPerMonth * 12;
@@ -113,21 +114,26 @@ function calculatekwPerHour(bill, state) {
     return Math.ceil(kwPerDay / actualHours);
 }
 
-function calculateSolarCost(bill, state) {
-    var kwPerHour = calculatekwPerHour(bill, state);
+// calculate how much it would cost to install solar panels to cover the bill 
+function calculateSolarInstallation(bill, state) {
+    var kwPerHour = calculateRequiredSolarPanels(bill, state);
+
     return kwPerHour * 1000 * 4;
 }
 
-function calculatePeakSunSolar(bill) {
+// calculate solar co-op cost to cover the bill
+function calculateSolarCoop(bill) {
     return bill * 12 / 0.069;
 }
 
-function calculateSavings(solarCost, peakSunCost) {
-    return solarCost - peakSunCost;
+// calculate difference between solar installation vs solar Co-op
+function calculateSavings(solarCost, solarCoopCost) {
+    return solarCost - solarCoopCost;
 }
 
-function calculateSavingsPercentage(solarCost, peakSunCost) {       
-    var percent = (solarCost - peakSunCost) / solarCost; 
+// Calculate savings percentage
+function calculateSavingsPercentage(solarCost, solarCoopCost) {       
+    var percent = (solarCost - solarCoopCost) / solarCost; 
     return Math.round(percent * 100);
 }
 
@@ -161,8 +167,8 @@ $(document).ready(function() {
     $("#state-select").change(function() {
         selectedState = $('#state-select').val();
 
-        if ($('#map').css("display") == "block") {
-            $('#map').usmap('trigger', selectedState, 'click');
+        if (map.css("display") == "block") {
+            map.usmap('trigger', selectedState, 'click');
         }
     });
 
@@ -171,22 +177,23 @@ $(document).ready(function() {
         updateOutputDiv(monthlyBill, selectedState);
     });
 
-    // calculate 
     function updateOutputDiv(monthlyBill, selectedState) {
-        var solarCost = calculateSolarCost(monthlyBill, selectedState);
+        var solarCost = calculateSolarInstallation(monthlyBill, selectedState);
         $('#solar-cost').text(accounting.formatMoney(solarCost));
-        var peakSunCost = calculatePeakSunSolar(monthlyBill);
-        $('#peak-sun-cost').text(accounting.formatMoney(peakSunCost));
-        var savings = calculateSavings(solarCost, peakSunCost);
+
+        var solarCoopCost = calculateSolarCoop(monthlyBill);
+        $('#solar-coop-cost').text(accounting.formatMoney(solarCoopCost));
+
+        var savings = calculateSavings(solarCost, solarCoopCost);
         $('#savings').text(accounting.formatMoney(savings));
-        var savingsPercentage = calculateSavingsPercentage(solarCost, peakSunCost);
+
+        var savingsPercentage = calculateSavingsPercentage(solarCost, solarCoopCost);
         $('#savings-percentage').text(savingsPercentage + '%'); 
         $('#solar-output-wrapper').show();
     }
 
     function generateMap() {
-        var map = $('#map');
-        map.usmap({
+        $('#map').usmap({
             stateHoverStyles: {
                 fill: '#ccc'
             },
@@ -198,8 +205,8 @@ $(document).ready(function() {
                 $('#' + data.name).css('fill', '#ccc');
                 selectedState = data.name;
                 $('#state-select').val(selectedState);
-                $('#selected-state-text').text('Selected: ' + statesByAbbreviation[selectedState]);
-                if (output.attr('style') == 'display: block;'){
+                $('#selected-state-text').text('Selected State: ' + statesByAbbreviation[selectedState]);
+                if ($('#solar-output-wrapper').attr('style') == 'display: block;'){
                     updateOutputDiv(monthlyBill, selectedState);
                 }
             }
