@@ -1,0 +1,1041 @@
+/* Common Styles */
+html {
+    background-color:  #e6ded3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: quicksand, sans-serif;
+    color: #005030;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #005030;
+}
+
+a:hover {
+    color: #000;
+}
+
+hr {
+    border-color: #005030;
+}
+
+.container {
+    margin-top: 20px; 
+    min-height: 800px;  
+}
+
+.container h1 {
+    font-family: quicksand, sans-serif;
+    font-size: 3rem;
+    color: #005030;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.marketing-img {
+    width: 170px;
+}
+
+#input-div {
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+iframe {
+    border: none;
+}
+
+.jumbotron-heading {
+    font-family: amatic-sc, sans-serif;
+    font-size: 4rem;
+    color: #fff;    
+}
+
+.jumbotron-content {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 30%;
+}
+
+.jumbotron .row {
+    width: 90%;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+#animation {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-img-div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section-img-div a {
+    font-family: quicksand, sans-serif;
+    font-size: 2rem;
+    color: #166648;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section-img-div img {
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+/* Navigation Styles */
+.topnav {
+    padding: 0 10%;
+    background-color: #005030;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: quicksand, sans-serif;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.topnav ul {
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    list-style:none;
+}
+
+.topnav li { 
+    display:inline-block;
+    width:24%;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    display:block;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #0A3321;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    text-align: left;
+    background-color: #005030;
+    padding: 2% 7% 2% 7%;
+    margin-top: 20px;
+}
+
+footer .row {
+    max-width: 1024px;
+    margin: auto;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+    line-height: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer p {
+    color: #fff;
+    font-family: quicksand, sans-serif;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer #social-div {
+    text-align: right;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+}
+
+/* 404 */
+#page404 {
+    margin-top: 10%;
+    min-height: 400px;
+}
+
+/* Investment Calculator */
+
+#input-div.u-pull-left .calc-heading {
+    font-size: 3rem;
+}
+
+#input-div.u-pull-left .investment-btn {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    margin-left: 0;
+}
+
+.calc-heading{
+    font-family: amatic-sc, sans-serif; 
+    font-size: 5rem;
+    line-height: 120%;
+    margin: 20px 0;
+}
+
+.output-heading {
+    font-family: amatic-sc, sans-serif; 
+    text-align: center;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 20px 0;
+}
+
+.btn {
+    font-family: Arial;
+    font-size: 1.6rem;
+    font-weight: normal;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.investment-btn {
+    color: #fff;
+    border: solid #333 2px;
+    font-size: 2rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #333;
+    box-shadow: 0px 5px 0px 0px #000;
+}
+
+.investment-btn:hover {
+    background: #000;
+    color: #cba135;
+    border: none;
+}
+
+.investment-btn:active, .investment-btn-active {
+    box-shadow: 0px 1px 0px 0px;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    color: #cba135;
+}
+
+.investment-input {
+    background-color: #e6ded3; 
+    font-size: 5rem;
+    font-weight: 600;
+    padding: 5px;
+    border: solid #000000 2px;
+    font-family: amatic-sc, sans-serif;
+    text-align: center;
+    width: 200px;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+}
+
+.investment-input:focus {
+    border: solid #cba135 2px;
+}
+
+#table-option-div {
+    text-align: center;
+}
+
+#question1 {
+    opacity: 0;
+}
+
+.transition {
+    -webkit-transition: all 0.5s 0.5s linear;
+    -moz-transition: all 0.5s 0.5s linear;
+    -ms-transition: all 0.5s 0.5s linear;
+    -o-transition: all 0.5s 0.5s linear;
+    transition: all 0.5s 0.5s linear;
+}
+
+#output-div {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 60px;
+    display: none;
+    opacity: 0;
+}
+
+#output1 {
+    opacity: 0;
+}
+
+canvas {
+    padding: 10px 0;
+}
+
+#output-table {
+    opacity: 0;
+    margin-top: 20px;
+}
+
+#investment-calc #doughnut-chart-div {
+    min-height: 400px;
+    height: 300px;
+}
+
+#investment-calc #doughnutChart {
+    margin-top: -10px;
+}
+
+#investment-calc #line-chart-div {
+    height: 400px;
+    display: none;
+    padding: 0px 20px 50px 20px;
+}
+
+#question2, #question3, #investment-calc #calculate-btn {
+    opacity: 0;
+}
+
+#table-option-div {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#table-option-div button {
+    font-family: Arial;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: normal;
+    background-color: inherit;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 14px;
+    transition: 0.3s;
+    border:  1px solid #005030;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+}
+
+#table-option-div button:hover, #table-option-div button.active {
+    background-color: #005030;
+    color: #fff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #005030;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.download-report {
+    margin: 10px 0;
+    background-color: #cba135;
+    color: #fff;
+    box-shadow: 0px 5px 0px 0px #b7912f;
+    border: 1px solid #cba135;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.download-report:hover {
+    margin-bottom: 10px;
+    background-color: #d5b45e;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}
+
+.download-report:active {
+    box-shadow: 0px 1px 0px 0px;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border: none;
+}
+
+#output1 {
+    text-align: center;
+}
+
+/* Home Page */
+#home {
+    text-align: center;
+    height: auto;
+    min-height: 0;
+    line-height: 1.2;
+}
+
+#home-content {
+    margin: 20px auto;
+    padding-top: 20px;
+    max-width: 1500px;
+}
+
+#home .jumbotron {
+    background-image: url('../images/home-bg-image.jpg');
+    background-color: #259cba;
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+/* Company */
+
+#company .jumbotron {
+    background-image: url('../images/our-company-bg-image.jpg');
+    background-color: #7c6e59;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+    height: 500px;
+}
+
+#company .jumbotron-content p {
+    font-family: amatic-sc, sans-serif;
+    font-size: 2.5rem;
+    text-align: right;
+    color: #fff;
+}
+
+#company h6 {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+#company #management-div img {
+    width:50%;
+    float:left;
+    padding: 0 20px 20px 0;
+}
+
+#company .management-name {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Investors */
+
+#investors #calc-icons-div {
+    min-height: 90px;
+}
+
+#investors #logo {
+    width: 150px;
+}
+
+#investors #logo-div {
+    position: absolute;
+    top: 10px;
+    left: 45%;
+}
+
+#investors .jumbotron {
+    background-image: url('../images/investors-bg-image.jpg');
+    background-color: #7c6e59;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+}
+
+#investors #investment-calc-img {
+    position: absolute;
+    left: 15%;
+}
+
+#marketing-materials h5 {
+    display: block;
+    min-height: 2rem;
+    text-align: center;
+}
+
+/* Solar Calculator */
+#solar-output {
+    border: 10px solid black;
+    margin: 20px;
+    padding: 20px;
+    display: none;
+}
+
+.number {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: bold;
+}
+
+#solar-output p {
+    font-family: amatic-sc, san-serif;
+    font-size: 3rem;
+    line-height:4rem;
+    text-transform: uppercase;
+}
+
+#solar-calc-img {
+    position: absolute;
+    top: 10px;
+    right: 15%;
+}
+
+/* Home Solar */
+
+#home-solar .jumbotron {
+    background-image: url('../images/home-solar-bg-image.jpg');
+    background-color: #7c6e59;
+    background-position: center; 
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+}
+
+#home-solar .jumbotron .row, #company .jumbotron .row{
+    margin: 10px 20% 10px 10%;
+    min-height: 50px;
+}
+
+#home-solar-reasons h1 {
+    color: #534741;
+}
+
+#home-solar-reasons li {
+    color: #534741;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#home-solar-reasons p {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+#solar-input h1 {
+    font-family: amatic-sc, sans-serif;
+    font-size: 5rem;
+    color: #000;
+    margin: auto;
+    line-height: 7rem;
+}
+
+#solar-input-text {
+    padding: 0 10%;
+}
+
+#state-select {
+    display: none;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #e6ded3;
+    border: solid 1px #000;
+    background: url(../images/drop-down-arrow.png) no-repeat 254px 12px;
+}
+
+#solar-amount-input-div {
+    text-align: right;
+}
+
+/* Investment Calculator - Agents */
+
+#detailed-report-questions .investment-input {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.radio-label {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#detailed-report-questions .investment-btn {
+    margin: 20px 0 0 0;
+}
+
+/* Investment Report PDF */
+#pdf {
+    width: 8.5in;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 1in;
+}
+
+#to-print {
+    padding: 0;
+}
+
+.page {
+    margin-top: 0.25in;
+    min-height: 10.25in;
+}
+
+#page4 {
+    min-height: 9in;
+}
+/* PDF Cover Page */
+#pdf-cover {
+    width: 8.5in;
+    display: none;
+}
+
+#pdf-cover h1, #pdf-cover h3 {
+    color: #000;
+    opacity: 1;
+}
+
+#pdf-cover #report-date h3 {
+    font-size: 30px;
+    text-align: left;
+}
+
+#pdf-cover #report-date {
+    position: absolute;
+    top: 6.5in;
+    left: 0.5in;
+}
+
+#pdf-cover #report-title {
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-transform: uppercase;
+    width: 5in;
+    position: absolute;
+    top: 4.5in;
+    left: 0.5in;
+}
+
+#pdf-cover #report-title h3 {
+    font-size: 40px;
+    text-align: left;
+    padding: 10px;
+}
+
+#pdf-cover-photo {
+    opacity: 0.5;
+    position: relative;
+}
+
+#pdf-cover-photo img {
+    width: 7.5in;
+    height: 7in;
+}
+
+#pdf-cover-text {
+    position: absolute;
+    top: 0;
+    width: 80%;
+}
+
+#pdf-cover #company-name {
+    top: 3.5in;
+    left: 0.5in;
+    position: absolute;
+}
+
+#pdf-cover #company-name h1 {
+    font-size: 80px;
+}
+
+#client-info, #agent-info {
+    width: 40%;
+    float: left;
+}
+
+#pdf p {
+    margin-bottom: 0
+}
+
+#pdf #company-name {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pdf #doc-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#pdf-cover-footer {
+    margin-left: 0.5in;
+    font-size: 20px;
+    min-height: 2in;
+}
+
+#pdf .page-header-wrapper {
+    text-transform: uppercase;
+}
+
+#pdf .page-header {
+    margin-left: 0;
+    width: 48%;
+}
+
+.pdf-header {
+    border-bottom: 4px solid #005030;
+    text-transform: uppercase;
+    height: 0.25in;
+    margin-bottom: 0.25in;
+}
+
+.prepared-for {
+    width: 3in;
+    float: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.date {
+    float: right;
+    display: block;
+}
+
+#pdf .inital-amount-div {
+    border: 3px solid #cba135;
+    text-transform: none;
+    font-size: 20px;
+    width: 39.3333333333%;
+}
+
+.initial-amount {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+#pdf #line-chart-div {
+    width: 6in;
+    height: 3.5in;
+    padding: 20px 20px 50px 20px;
+}
+
+#pdf #doughnut-chart-div {
+    /* width: 8in; */
+    height: 3in;
+    padding: 0px 20px 50px 20px;
+    margin-left: 0px;
+}
+
+#pdf #doughnut-chart-title {
+    margin-top: 20%;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/* PDF Table */
+#pdf .table-div {
+    margin-top: 20px;
+    min-height: 750px;
+}
+
+#pdf table {
+    margin-bottom: 5px;
+}
+
+#pdf .table-title {
+    font-size: 25px;
+}
+
+#pdf thead {
+    background-color: #cba135;
+}
+
+#pdf th {
+    width: 8%;
+}
+
+#pdf th, td {
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    padding: 6px;
+}
+
+#pdf th:first-child, td:first-child {
+    padding-left: 10px;
+}
+
+.pdf-footer {
+    border-top: 4px solid #005030;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pdf-footer div {
+    width: 48%;
+    float: left;
+}
+
+#pdf .page-number {
+    text-align: right;
+    font-size: 1.25rem;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+#edit-search-link {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+
+    #input-div.u-pull-left {
+        display:none;
+    }
+
+    #edit-search-link {
+        display: block;
+    }
+
+    #home .jumbotron #logo {
+        width: 150px;
+    }
+
+    #solar-input h1 {
+        font-size: 4rem;
+    }
+
+    .investment-input {
+        font-size: 4rem;
+    }
+
+    .investment-btn {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+    .section-img-div {
+        width: 70%;
+    }
+
+    #footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer #social-div {
+        text-align: left;
+    }
+
+    #home-solar #logo {
+        width: 100px;
+    }
+
+    #solar-calc-img, #investment-calc-img {
+        width: 100px;
+    }
+
+    .topnav {
+        padding: 0;
+    }
+    .topnav a {
+        padding: 10px;
+    }
+
+    #company .jumbotron-content {
+        text-align: left;
+    }
+
+    #company .jumbotron-content p {
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    #company .jumbotron #logo {
+        width: 120px;
+    }
+
+    #company #management-div img {
+        width:100%;
+    }
+
+    #investors #logo {
+        /* left: 40%; */
+        position: relative;
+        /* top: 60px;
+        width: 120px; */
+    }
+
+    #investors #calc-icons-div {
+        min-height: 50px;
+    }
+
+    #investors #logo-div {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+    }
+
+    #investors #logo {
+        left: 0;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #state-select {
+        display: block;
+    }
+
+    #solar-calculator .container {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 10px;
+    }
+
+    #select-state-text {
+        display: none;
+    }
+
+    #solar-amount-input-div {
+        text-align: left;
+    }
+
+    #animation {
+        width: 90%;
+    }
+
+    #company .jumbotron-content {
+        left: 10%;
+    }
+
+    .number {
+        font-size: 6rem;
+    }
+
+    #solar-output p {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    #solar-output {
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .btn {
+        margin: 5px 0;
+    }
+
+    #output-div {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 721px) {
+    .section-img-div {
+        width: 30%;
+    }
+
+    #home-solar #logo {
+        width: 150px;
+    }
+
+    #footer-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #map {
+        width: 100%;
+        min-height: 400px;
+        margin: auto;
+        padding: 0 10%;
+    }
+
+    #solar-calculator .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #animation {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1600px) {
+    #animation {
+        width: 700px;
+    }
+}
+
+@media (min-width: 2000px) {
+    #animation {
+        width: 1000px;
+    }
+}

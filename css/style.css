@@ -1,0 +1,136 @@
+html {
+    background-color:  #e6ded3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #005030;
+    margin-bottom: 1rem;
+}
+
+#map {
+    width: 100%;
+    min-height: 400px;
+    margin: auto;
+    padding: 0 10%;
+}
+
+#solar-input-wrapper {
+    padding: 0 10%;
+    max-width: 600px;
+}
+
+#solar-input-wrapper p {
+    font-size: 3rem;
+    color: #000;
+    margin: auto;
+    line-height: 4rem;
+}
+
+#state-select {
+    display: none;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #e6ded3;
+    border: solid 1px #000;
+}
+
+p#selected-state-text {
+    color: #005030;
+}
+
+#solar-amount-input-div {
+    text-align: right;
+}
+
+.investment-input {
+    background-color: #e6ded3; 
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 5px;
+    border: solid #000000 2px;
+    text-align: center;
+    width: 150px;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.investment-input:focus {
+    border: solid #cba135 2px;
+}
+
+.investment-btn {
+    color: #fff;
+    border: solid #333 2px;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #333;
+    box-shadow: 0px 5px 0px 0px #000;
+    vertical-align: middle;
+}
+
+.investment-btn:hover {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.investment-btn:active {
+    box-shadow: 0px 1px 0px 0px;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    color: #fff;
+}
+
+.investment-btn:focus {
+    color: #fff;
+}
+
+#solar-output-wrapper {
+    border: 10px solid black;
+    margin: 20px 10%;
+    padding: 20px;
+    max-width: 600px;
+    display: none;
+}
+
+.number {
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+    color: #005030;
+}
+
+#solar-output-wrapper p {
+    font-family: Garamond, serif;
+    font-size: 3rem;
+    line-height:4rem;
+}
+
+#solar-calc-img {
+    position: absolute;
+    top: 10px;
+    right: 15%;
+}
+
+@media (max-width: 720px) {
+    #map {
+        display: none;
+    }
+
+    #state-select {
+        display: block;
+    }
+
+    #selected-state-text {
+        display: none;
+    }
+
+    #solar-input-wrapper {
+        padding: 10px;
+    }
+
+    #solar-output-wrapper {
+        margin: 20px 0;
+    }
+}
